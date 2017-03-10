@@ -356,6 +356,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #eb3c00;
   font-size: 14px;
   text-transform: uppercase;
+  letter-spacing: 0.3px;
 }
 /* line 243, ../sass/screen.scss */
 .conteiner-news ul {
@@ -392,7 +393,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  top: 87%;
+  top: 93.2%;
   left: 96.1%;
   font-weight: 300;
 }
