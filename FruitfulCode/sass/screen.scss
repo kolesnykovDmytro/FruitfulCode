@@ -1,0 +1,277 @@
+@import "compass/reset";
+
+$color-bg_conteiner: #f5f5f5;
+$color-bg_header: #fff;
+$color-general: #eb3c00;
+$color-header: #282828;
+$color-logo: #939393;
+$color-logo_span: rgba(40, 40, 40, 0.502);
+$color-link: rgb(40, 40, 40);
+$color-link_nav: #fff;
+$color-bg_btn: #ee4400;
+$fontPT: 'PT Serif', serif;
+
+.wrap {
+  font-family: 'Oswald', 'Arial', sans-serif;  
+  background: $color-bg_conteiner;
+  position: relative;
+  min-width: 320px;
+};
+
+.wrap-inner {
+    max-width: 1133px;
+
+    margin: 0 auto;
+};
+
+.header {
+  background-color: $color-bg_header;
+};
+
+.btn-menu {
+    display: none;
+    background: url(../img/spritesheet.png) -29px -12px no-repeat;
+    width: 26px;
+    height: 22px;
+
+}
+
+.hidden-menu {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding-top: 700px;
+    ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: stretch;
+        a {
+            display: inline-block;
+            margin: 20px auto;
+            color: #fff; 
+        }
+    }
+}
+.hidden-menu li:hover {
+    background-color: red;
+    -webkit-transition: 2s;
+    transition: 2s;
+}
+
+.header-top {
+  display:flex;
+  flex-wrap:wrap;
+  padding: 30px 0 33px 0;
+    .top__logo {
+        flex-basis: 50%;
+ };
+    .top__action {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;   
+        padding-top: 7px;    
+        flex-basis: 50%;
+            .action__icon {
+              background: url(../img/spritesheet.png) no-repeat -1px -2px;
+              width: 16px;
+              height: 16px;
+          };
+          a {
+            color: $color-link;
+            font-size: .8125em;
+            font-family: $fontPT;
+            font-style: italic;
+            margin: 0 33px 0 9px;
+            text-transform: uppercase;
+            text-decoration: none;
+          };
+          button {
+            font-family: $fontPT;
+            font-size: .8125em;
+            background: $color-bg_btn;
+            border: none;
+            outline: none;
+            color: $color-link_nav;
+            padding: 13px 55px;
+            text-transform: uppercase;
+            font-style: italic;
+              &:hover {
+                background-color: rgb(175, 175, 175);
+                cursor: pointer;
+                transition: 2s;
+              };
+          };
+    };
+};
+.logo__text {
+  color: $color-general;
+  font-size: 3.125em;
+  font-weight: bold;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+    span {
+        font-family: $fontPT;
+        font-size: .375em;
+        font-weight: 100;
+        font-style: italic;
+        color: $color-logo_span;
+        text-transform: lowercase;
+        margin-left: 8px;
+        letter-spacing: -0.4px;
+    };
+};
+
+.header-sub {
+  background-color: $color-header;
+    .header__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    };
+};
+
+.menu-list {
+  display: flex;
+    align-items: center;
+    color: rgb(245, 245, 245);
+    font-size: 0;
+       li:first-child {
+          background-color: $color-general;
+        };
+      li {
+          height: 100%;
+          padding: 27px 18px;
+          font-size: 18px;
+          letter-spacing: 1.1px;
+          &:hover {
+              background-color: rgb(175, 175, 175);
+              cursor: pointer;
+              transition: 2s;
+          }
+          a {
+              color: $color-link_nav;
+              text-decoration: none;
+              text-transform: uppercase;
+            };
+          };   
+};
+
+.form-search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    width: 249px;
+    margin-top: 16px;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+      input[type="text"] {
+          width: 100%;
+          height: 38px;
+          border: 0;
+          color: rgba(40, 40, 40, .2);
+          font-family: 'Oswald';
+          font-size: .875em;
+          text-transform: uppercase;
+          outline: none;
+      };
+      input[type="submit"] {
+        width: 25px;
+        height: 25px;
+        border: 0;
+        background: url(../img/spritesheet.png) no-repeat -62px 1px;
+        font-size: 0px;
+
+      };
+};
+
+.conteiner {
+    padding-bottom: 300px;
+};
+
+.conteiner-info {
+    padding-top: 48px;
+      .conteiner__title {
+        font-size: 3.1em;
+        width: 67%;
+        line-height: 1.25;
+        letter-spacing: 0.3px
+      };
+      .conteiner__text {
+          width: 75%;
+          margin: 40px 0 36px;
+          font-family: $fontPT;
+          font-style: normal;
+          font-size: 1.5em;
+          line-height: 1.5; 
+      };
+      h3 {
+          margin-bottom: 14px;
+          letter-spacing: .6px;
+          font-family: $fontPT;
+          font-weight: bold;
+          font-size: 18px;
+          letter-spacing: 0px;
+      };
+      .conteiner__list {
+          font-family: $fontPT;
+          font-size: 18px;
+          margin-left: 19px;
+          line-height: 1.5;
+          list-style: disc;
+      };
+};
+
+.conteiner-news {
+    .news__title {
+        padding: 62px 0 23px;
+        color: $color-general;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        li{
+            flex-basis: 10%;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 1.2;
+            a {
+                color:inherit;
+                text-decoration: none;
+            }
+            p {
+                margin: 3px 6px 0 0;
+            };
+        };
+    };
+};
+
+.arrows {
+    .arrows-icon {
+        display: flex;
+        position: absolute;
+        top: 87%;
+        left: 96.1%;
+        font-weight: 300;
+        i {
+            display: block;
+            width: 19px;
+            height: 30px;
+            background: url(../img/spritesheet.png) no-repeat 0px -20px;
+        };
+    };
+};
